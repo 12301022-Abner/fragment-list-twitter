@@ -17,7 +17,7 @@
         android:layout_gravity="fill_horizontal"
         android:hint="@string/queryPrompt"
         android:imeOptions="actionNext" >
-         
+
         <requestFocus/>
     </EditText>
 
@@ -41,34 +41,14 @@
             android:src="@android:drawable/ic_menu_save" />
     </LinearLayout>
 
-    <LinearLayout
+    <FrameLayout
         android:layout_height="0dp"
         android:layout_gravity="fill"
+        android:id="@+id/place_holder"
         android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:background="@android:color/holo_blue_bright"
         android:orientation="vertical"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin" >
-
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="fill_horizontal"
-            android:gravity="center_horizontal"
-            android:text="@string/taggedSearches"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-
-        <ListView
-            android:id="@android:id/list"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_gravity="fill"
-            android:layout_marginBottom="@dimen/tagged_searches_padding"
-            android:layout_marginTop="@dimen/tagged_searches_padding"
-            android:layout_weight="1" />
-        
-    </LinearLayout>
+        android:paddingTop="@dimen/activity_vertical_margin" />
 
 </GridLayout>
